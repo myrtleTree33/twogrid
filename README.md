@@ -44,6 +44,7 @@ See **Usage** for examples.
 Returns the cell at the given x,y position.  If cell is out of out of bounds, returns `undefined`.  **Is not chainable.**
 
 **x** : X position of cell to get.
+
 **y** : Y position of cell to get.
 
 
@@ -52,7 +53,9 @@ Returns the cell at the given x,y position.  If cell is out of out of bounds, re
 Sets the cell at the given x,y position.
 
 **x** : X position of cell to get.
+
 **y** : Y position of cell to get.
+
 **Value** : The new value to set to.  Can be an object.
 
 
