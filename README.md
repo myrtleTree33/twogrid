@@ -25,11 +25,11 @@ Deploy a 2D grid matrix fast, in Javascript.  Useful for olympiads / quick hacks
 	});
 	twogrid = new Twogrid(3, 3, { rawData: [ 1,2,3,4,5,6,7,8,9 ]});			// from an array
 
-	twogrid.newTwogrid(3,2).get(1,0) 										// is chainable
+	twogrid.newTwogrid(3,2).get(1,0);										// is chainable
 
-	var newgrid = new Twogrid()
+	var newgrid = new Twogrid();
 
-	twogrid.newTwogrid(3,2).get(1,0) 										// is chainable
+	twogrid.newTwogrid(3,2).get(1,0);										// is chainable
 
 
 ## Constructors
