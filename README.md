@@ -1,5 +1,7 @@
 # twogrid
 
+<img src='https://www.codeship.io/projects/be485250-494f-0131-6348-2ec227d8ea8c/status' />
+
 ## What?
 
 Deploy a 2D grid matrix fast, in Javascript.  Useful for olympiads / quick hacks.
