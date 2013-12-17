@@ -1,0 +1,29 @@
+{
+  "name": "twogrid",
+  "version": "0.0.0",
+  "author": "jhtong <http://blog.joeltong.org>",
+  "description": "Deploy a 2D grid matrix fast, in Javascript.  Useful for olympiads / quick hacks.",
+  "main": "./lib/compiled/Twogrid.js",
+  "repository": {
+    "type": "git",
+    "url": "https://"
+  },
+  "keywords": [
+    "twogrid",
+    "2D grid",
+    "2 dimensional grid",
+    "2-D grid",
+    "2D array",
+    "2D matrix"
+  ],
+  "dependencies": {
+    "grunt": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-shell": "latest",
+    "jasmine-node": "latest"
+  },
+  "devDependencies": {
+    "grunt-contrib-coffee": "~0.7.0"
+  },
+  "license" : "MIT"
+}
