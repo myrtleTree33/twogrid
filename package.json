@@ -1,12 +1,12 @@
 {
   "name": "twogrid",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "jhtong <http://blog.joeltong.org>",
   "description": "Deploy a 2D grid matrix fast, in Javascript.  Useful for olympiads / quick hacks.",
   "main": "./lib/compiled/Twogrid.js",
   "repository": {
     "type": "git",
-    "url": "https://"
+    "url": "https://github.com/toiletfreak/twogrid"
   },
   "keywords": [
     "twogrid",
