@@ -39,7 +39,7 @@ See **Usage** for examples.
 
 ## Methods
 
-### get(x,y)
+### .get(x,y)
 
 Returns the cell at the given x,y position.  If cell is out of out of bounds, returns `undefined`.  **Is not chainable.**
 
@@ -48,7 +48,7 @@ Returns the cell at the given x,y position.  If cell is out of out of bounds, re
 **y** : Y position of cell to get.
 
 
-### set(x,y, value)
+### .set(x,y, value)
 
 Sets the cell at the given x,y position.
 
@@ -59,12 +59,12 @@ Sets the cell at the given x,y position.
 **Value** : The new value to set to.  Can be an object.
 
 
-### copy(gridToCopy)
+### .copy(gridToCopy)
 
 Copies another Twogrid instance, defined by `gridToCopy`.
 
 
-### display()
+### .display()
 
 Displays grid on console.
 
