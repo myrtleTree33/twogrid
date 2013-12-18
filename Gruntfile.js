@@ -11,15 +11,15 @@ module.exports = function(grunt) {
         flatten: true,
         cwd: 'lib/',
         src: ['*.coffee'],
-        dest: 'lib/compiled/',
-        ext: '.js'
+        dest: 'lib/',
+        ext: '.min.js'
       }
     },
 
     watch: {
       js: {
         files: ['lib/**/*.coffee', 'spec/**/*-spec.coffee'],
-        tasks: ['test', 'coffee']
+        tasks: ['coffee', 'test']
       }
     },
 

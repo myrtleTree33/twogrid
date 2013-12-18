@@ -21,11 +21,11 @@ module.exports = class Twogrid
 		@height = gridToCopy.height
 		return @
 
-	get: (x = 0, y = 0) -> 
+	get: ([x, y] = [0,0]) -> 
 		return undefined if (y + 1 > @height) or (x + 1 > @width)
 		return @grid[x + y * @width]
 
-	set: (x = 0,y = 0, value) ->
+	set: ([x,y] = [0,0], value) ->
 		return @ if (y + 1 > @height) or (x + 1 > @width)
 		@grid[ x + y * @width ] = value
 		return @
@@ -34,7 +34,7 @@ module.exports = class Twogrid
 		outputStr = '\n'
 		for y in [0 ... @height]
 			for x in [0 ... @width]
-				outputStr += @get(x,y)
+				outputStr += @get([x,y])
 			outputStr += '\n'
 		console.log outputStr
 		return @
