@@ -25,11 +25,14 @@ Deploy a 2D grid matrix fast, in Javascript.  Useful for olympiads / quick hacks
 	});
 	twogrid = new Twogrid(3, 3, { rawData: [ 1,2,3,4,5,6,7,8,9 ]});			// from an array
 
-	twogrid.newTwogrid(3,2).get(1,0);										// is chainable
+	twogrid.newTwogrid(3,2).get([1,0]);										// is chainable
 
 	var newgrid = new Twogrid();
 
-	twogrid.newTwogrid(3,2).get(1,0);										// is chainable
+	newgrid
+		.copy(twogrid)
+		.display
+		.get([1,0]);														// is chainable
 
 
 ## Constructors
@@ -39,7 +42,7 @@ See **Usage** for examples.
 
 ## Methods
 
-### .get(x,y)
+### .get([x,y])
 
 Returns the cell at the given x,y position.  If cell is out of out of bounds, returns `undefined`.  **Is not chainable.**
 
@@ -48,7 +51,7 @@ Returns the cell at the given x,y position.  If cell is out of out of bounds, re
 **y** : Y position of cell to get.
 
 
-### .set(x,y, value)
+### .set([x,y], value)
 
 Sets the cell at the given x,y position.
 
